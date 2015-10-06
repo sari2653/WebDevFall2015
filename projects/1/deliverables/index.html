@@ -1,8 +1,59 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>awertfgh</title>
+	<title>B-E-A-UTIFUL</title>
 </head>
 <body>
+
+<h1> Read me </h1>
+<h2> super important </h2>
+<h3> like really </h3>
+<h4> awlrkgebg </h4>
+<h5> la;jgrrle </h5>
+
+<p> lawkegjlekrglekgnlek;helakrjhleka;rjheklbnela </p>
+
+<ul>
+	<li>ul does bullet points</li>
+	<li> list item 1</li>
+	<li> list item 1</li>
+</ul>
+
+<ol>
+	<li>ol does numbers</li>
+	<li> list item 1.1</li>
+	<li> list item 2.2 </li>
+</ol>
+
+<!-- # === ID -->
+<!-- . === ClASS -->
+
+<form id = "sayhi"> 
+	<input id = "firstname" type = "text" name = "name">
+	<input type = "submit" value = "submit">
+
+</form>
+
+<script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+
+		$("#sayhi").on("submit", function (e) {
+
+			e.preventDefault(); 
+			// prevent default means you don't refresh the page
+
+			var firstName = $("#firstname").val();
+
+			alert("Hello, " + firstName); 
+
+		});
+
+	});
+
+</script>
+
 
 </body>
 </html>
