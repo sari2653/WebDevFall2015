@@ -4,8 +4,9 @@
 	<title>Fabio Anselmo - Homepage</title>
 	
 	<!-- This is css -->
-	<style type="text/css">
-		.outline {
+	<!-- putting a . before outline makes it a class -->
+	<style type="text/css"> 
+		.outline {  
 			border: 1px solid #ccc;
 			padding: 5px 10px;
 			margin: 5px;
@@ -126,14 +127,13 @@
 		});
 
 
-
 		// Using JavaScript only: set a class attribute of `outline`
 		// to each tag within the `body`.
-		var bodyElements = document.body.getElementsByTagName('*');
+		var bodyElements = document.body.getElementsByTagName('*'); // the * means you apply the style to all of the elements rather than just h1, p, etc
 
 		for(var i = 0; i < bodyElements.length; i++) {
 				
-			if ( bodyElements[i].tagName != "SCRIPT" && bodyElements[i].tagName != "LI" && bodyElements[i].tagName != "INPUT" ) {
+			if ( bodyElements[i].tagName != "SCRIPT" && bodyElements[i].tagName != "LI" && bodyElements[i].tagName != "INPUT" ) { 
 
 				bodyElements[i].setAttribute('class', 'outline');
 				
